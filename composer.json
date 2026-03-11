@@ -1,0 +1,22 @@
+{
+    "name": "klsoft/yii3-datareader-doctrine",
+    "type": "library",
+    "description": "The package provides a Yii 3 data reader that uses the Doctrine ORM",
+    "homepage": "https://github.com/klsoft-web/yii3-datareader-doctrine",
+    "keywords": [
+        "datareader",
+        "orm",
+        "doctrine",
+        "yii3"
+    ],
+    "license": "MIT",
+    "require": {
+        "yiisoft/data": "^2.0",
+        "klsoft/yii3-doctrine": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Klsoft\\Yii3DataReaderDoctrine\\": "src"
+        }
+    }
+}
