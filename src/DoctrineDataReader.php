@@ -72,7 +72,7 @@ final class DoctrineDataReader implements DataReaderInterface
             $this->filter,
             0,
             $qb
-                ->select($qb->expr()->count(count($identifierFields) === 1 ? 'entity.' . $identifierFields[0] : 'entity'))
+                ->select($qb->expr()->count('entity.' . $identifierFields[0]))
                 ->from($this->entityClass, 'entity'))
             ->getQuery()
             ->getSingleScalarResult();
